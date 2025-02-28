@@ -6,8 +6,8 @@
         <title>UV Media</title>
         <meta content="width=device-width, initial-scale=1" name="viewport"/>
         <link href="style.css" rel="stylesheet" type="text/css"/>
-                <link href="/assets/BG_Less Logo.png" rel="shortcut icon" type="image/x-icon"/>
 
+        <link href="/assets/BG_Less Logo.png" rel="shortcut icon" type="image/x-icon"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
         <style>
@@ -107,7 +107,7 @@
                         </div>
                         <div class="header_text-wrap">
                             <div class="header_text-move">
-                                <h1 class="is--alt-text">Idea's</h1>
+                                <h1 class="is--alt-text">Ideas's</h1>
                             </div>
                         </div>
                         <div class="header_text-wrap">
@@ -381,11 +381,11 @@
                     <div>
                       <h3 class="footer-heading">Quick Links</h3>
                       <ul class="quick-links">
-                    <li><button onclick="redirectToSection('services.html')">Services</button></li>
-                <li><button onclick="redirectToSection('portfolio.html')">Portfolio</button></li>
-                <li><button onclick="redirectToSection('about.html')">About Us</button></li>
-                <li><button onclick="redirectToSection('contact.html')">Contact</button></li>
-                  </ul>
+                        <li><button onclick="scrollToSection('services')">Services</button></li>
+                        <li><button onclick="scrollToSection('portfolio')">Portfolio</button></li>
+                        <li><button onclick="scrollToSection('about')">About Us</button></li>
+                        <li><button onclick="scrollToSection('contact')">Contact</button></li>
+                      </ul>
                     </div>
                     
                     <div>
@@ -412,9 +412,6 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
         <script>
-             function redirectToSection(page) {
-    window.location.href = page; // Redirect to the specified page
-}
             gsap.registerPlugin(ScrollTrigger);
 
             ScrollTrigger.defaults({
@@ -625,6 +622,9 @@
                     duration: 1
                 });
             });
+            function redirectToSection(page) {
+                window.location.href = page; // Redirect to the specified page
+            }
         </script>
     </body>
 </html>
